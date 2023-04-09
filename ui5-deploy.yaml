@@ -14,10 +14,14 @@ builder:
       afterTask: generateCachebusterInfo
       configuration:
         target:
-          url: http://fgtappg4b.fulcrum-gt.com:8000/
-          client: "100"
+          url: https://fgthana01.int-gcp.fulcrumgt.com
+          auth: basic
+          client: 200
+        credentials:
+          username: env:ABAP_USER
+          password: env:ABAP_PASSWORD
         app:
-          name: TMP
-          description: TMP
-          package: SAMPLE
-          transport: TR102920209
+          name: ZSAMPLEUI5CICD
+          description: CI CD Sasmple APP
+          package: $TMP
+          transport: $tmp
