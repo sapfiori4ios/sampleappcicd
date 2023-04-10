@@ -18,8 +18,8 @@ builder:
           auth: basic
           client: 200
         credentials:
-          username: ${{secrets.ABAP_USER}}
-          password: ${{secrets.ABAP_PASSWORD}}
+          username: ${{vars.ABAP_USER}}
+          password: ${{vars.ABAP_PASSWORD}}
         app:
           name: ZSAMPLEUI5
           description: Sasmple APP
