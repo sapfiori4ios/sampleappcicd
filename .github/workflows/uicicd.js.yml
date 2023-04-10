@@ -12,6 +12,9 @@ jobs:
 
     runs-on: ubuntu-latest
     environment: ABAP_USER
+    env:
+      ABAP_USER : ${{ vars.ABAP_USER }}"
+      ABAP_PASSWORD : ${{ vars.ABAP_PASSWORD }}"
     strategy:
       matrix:
         node-version: [16.x]
