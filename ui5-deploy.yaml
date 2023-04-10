@@ -18,10 +18,10 @@ builder:
           auth: basic
           client: 200
         credentials:
-          username: env:ABAP_USER
-          password: env:ABAP_PASSWORD
+          username: ${{secrets.ABAP_USER}}
+          password: ${{secrets.ABAP_PASSWORD}}
         app:
-          name: ZSAMPLEUI5CICD
-          description: CI CD Sasmple APP
+          name: ZSAMPLEUI5
+          description: Sasmple APP
           package: $TMP
-          transport: $tmp
+          transport: DV2K904174
