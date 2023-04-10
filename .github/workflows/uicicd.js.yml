@@ -24,5 +24,8 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
+    - name: Use variables
+      run: |
+        echo "repository variable : ${{ vars.ABAP_USER }}"
     - run: npm ci
     - run: echo 'yes' | npm run deploy
