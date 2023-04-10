@@ -15,6 +15,7 @@ jobs:
     env:
       ABAP_USER : ${{ vars.ABAP_USER }}
       ABAP_PASSWORD : ${{ vars.ABAP_PASSWORD }}
+      ABAP_URL : ${{ vars.ABAP_URL }}
     strategy:
       matrix:
         node-version: [16.x]
@@ -29,6 +30,6 @@ jobs:
         cache: 'npm'
     - name: Use variables
       run: |
-        echo "repository variable : ${{ vars.ABAP_USER }}"
+        echo "repository variable : ${{ vars.ABAP_URL }}"
     - run: npm ci
     - run: echo 'yes' | npm run deploy
