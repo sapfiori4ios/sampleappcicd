@@ -14,7 +14,8 @@ jobs:
     environment: ABAP_USER
     env:
       ABAP_USER : ${{ vars.ABAP_USER }}
-      ABAP_PASSWORD : ${{ vars.ABAP_PASSWORD }}
+      ABAP_PASSWORD : ${{ secrets.ABAP_PASSWORD }}
+      ABAP_CLIENT: ${{ secrets.ABAP_CLIENT }}
       ABAP_URL : ${{ vars.ABAP_URL }}
     strategy:
       matrix:

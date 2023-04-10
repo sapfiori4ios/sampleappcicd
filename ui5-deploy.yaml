@@ -16,7 +16,7 @@ builder:
         target:
           url: env:ABAP_URL
           auth: basic
-          client: 200
+          client: env:ABAP_CLIENT
         credentials:
           username: env:ABAP_USER
           password: env:ABAP_PASSWORD
