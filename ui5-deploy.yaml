@@ -18,8 +18,8 @@ builder:
           auth: basic
           client: 200
         credentials:
-          username: env:ABAP_USER
-          password: env:ABAP_PASSWORD
+          username: bgoudar
+          password: August@123
         app:
           name: ZSAMPLEUI5
           description: Sasmple APP
